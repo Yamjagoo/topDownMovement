@@ -10,11 +10,15 @@ public class PlayerControl : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
+    private RandomEncounter randomEncounter;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        randomEncounter = GetComponent<RandomEncounter>();
     }
 
     void Update()
@@ -27,6 +31,11 @@ public class PlayerControl : MonoBehaviour
         animator.SetFloat("yVelocity", speedY);
 
         UpdateCharacterDirection();
+
+        if (speedX != 0 || speedY != 0)
+        {
+            randomEncounter.TryEncounter();
+        }
     }
 
     void UpdateCharacterDirection()
