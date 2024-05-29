@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"path": "../../TurnBasedProto"
+	},
+	{
+		"path": "../../../../VSCode"
+	},
+	{
+		"path": "../../../../VSCode/HTML"
+	},
+	{
+		"path": "../../../../VSCode/Tutorials"
+	},
+	{
+		"path": "../../../../USLS/UI/Reserve 3"
+	}
+],
+  "settings": {
+    "dotnet.defaultSolution": "TurnBasedProto.sln",
+    "liveServer.settings.multiRootWorkspaceName": "Reserve 3"
+  }
+}
